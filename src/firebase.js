@@ -1,17 +1,17 @@
 import firebase from "firebase";
 
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyBi1C7fk6tXPr7sKXXYG86MZJuHhKyi2hQ",
-  authDomain: "disney-598cb.firebaseapp.com",
-  projectId: "disney-598cb",
-  storageBucket: "disney-598cb.appspot.com",
-  messagingSenderId: "274334151473",
-  appId: "1:274334151473:web:f4817d3fd600913e4ff610",
-  measurementId: "G-VG9JTKYDRD",
+  apiKey: "AIzaSyC7qPJoGAVi3TZqy9NbWL1q4MHdvDsmsPQ",
+  authDomain: "disney-website-clone.firebaseapp.com",
+  projectId: "disney-website-clone",
+  storageBucket: "disney-website-clone.appspot.com",
+  messagingSenderId: "1059248489212",
+  appId: "1:1059248489212:web:8ba13fc590d5010367cd79",
+  measurementId: "G-8VK7KL0GPX",
 };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
-const db = firebaseApp.firestore();
 const auth = firebase.auth();
 const provider = new firebase.auth.GoogleAuthProvider();
 
