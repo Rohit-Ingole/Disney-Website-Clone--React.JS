@@ -23,7 +23,6 @@ function Header() {
       auth
         .signInWithPopup(provider)
         .then((result) => {
-          console.log(result.user);
           setUser(result.user);
         })
         .catch((error) => {
@@ -59,7 +58,7 @@ function Header() {
       <Logo>
         <img src="/images/logo.svg" alt="Disney+" />
       </Logo>
-      {!user?.email ? (
+      {!user ? (
         <Login onClick={handleAuth}>Login</Login>
       ) : (
         <>
