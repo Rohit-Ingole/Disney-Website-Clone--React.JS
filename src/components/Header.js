@@ -16,7 +16,7 @@ function Header() {
         history.push("/home");
       }
     });
-  }, []);
+  }, [user?.email]);
 
   const handleAuth = () => {
     if (!user) {
@@ -58,7 +58,7 @@ function Header() {
       <Logo>
         <img src="/images/logo.svg" alt="Disney+" />
       </Logo>
-      {!user ? (
+      {!user?.email ? (
         <Login onClick={handleAuth}>Login</Login>
       ) : (
         <>
