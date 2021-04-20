@@ -1,9 +1,5 @@
 export const initialState = {
-  user: {
-    name: null,
-    email: null,
-    photo: null,
-  },
+  user: null,
   recommend: null,
   newDisney: null,
   original: null,
